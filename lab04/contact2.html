@@ -60,11 +60,25 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <!-- Contact Form -->
-    <form action="https://formspree.io/f/xldrqnqy" method="POST">
+    <form action="" method="POST">
         <fieldset>
             <legend>Contact Form</legend>
 
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br>
 
-            <label for="contact-method">Preferred cont
+            <label for="contact-method">Preferred contact method:</label>
+            <input type="radio" id="email" name="contact-method" value="Email" required>
+            <label for="email">Email</label>
+            <input type="radio" id="phone" name="contact-method" value="Phone" required>
+            <label for="phone">Phone</label><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
