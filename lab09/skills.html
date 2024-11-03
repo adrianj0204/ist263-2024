@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* Main Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Flexbox for Skills Icons */
+        .skills-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .skill-item {
+            text-align: center;
+            padding: 10px;
+        }
+        .skill-item img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Aside Section Styles */
+        .other-skills {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .other-skills h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .other-skills ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        .other-skills li {
+            margin: 5px 0;
+        }
+
+        /* Flexbox 2: Main Layout */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .icons-container {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .aside-container {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading and Intro Text -->
+    <h1>Technical Skills</h1>
+    <p>Here is a showcase of my most valuable technical skills, visualized using icons for clarity and impact.</p>
+
+    <!-- Flexbox 2: Main Layout -->
+    <div class="main-container">
+        <!-- Icons Flexbox Container -->
+        <div class="icons-container">
+            <div class="skills-row">
+                <div class="skill-item">
+                    <img src="path/to/html-icon.png" alt="HTML Icon">
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-item">
+                    <img src="path/to/css-icon.png" alt="CSS Icon">
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-item">
+                    <img src="path/to/js-icon.png" alt="JavaScript Icon">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="path/to/react-icon.png" alt="React Icon">
+                    <p>React</p>
+                </div>
+                <div class="skill-item">
+                    <img src="path/to/git-icon.png" alt="Git Icon">
+                    <p>Git</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="aside-container other-skills">
+            <h2>Other Skills</h2>
+            <ul>
+                <li>SEO</li>
+                <li>Bootstrap</li>
+                <li>REST APIs</li>
+                <li>Figma</li>
+                <li>Version Control</li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
