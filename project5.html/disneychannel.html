@@ -4,6 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disney Channel - Nostalgic TV</title>
+    <!-- Importing the Bangers font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Bangers font to the whole page */
+        body {
+            font-family: 'Bangers', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            border-bottom: 5px solid #ff9900;
+        }
+
+        header h1 {
+            color: darkblue;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: darkblue;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px solid darkblue;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #ffcc00;
+            color: white;
+        }
+
+        main {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: white;
+            border: 2px solid #ff9900;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border: 3px solid #ff9900;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: darkblue;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            line-height: 1.6;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .images-section {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .images-section div {
+            width: 30%;
+        }
+
+        .images-section img {
+            width: 100%;
+            border: 3px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,6 +134,20 @@
                 <li>Disney Channel was the first to feature original programming specifically for children and families.</li>
                 <li>The Disney logo and theme song are globally recognized.</li>
             </ul>
+        </section>
+        <section class="images-section">
+            <div>
+                <img src="images/hannah-montana.jpg" alt="Hannah Montana">
+                <p><strong>Hannah Montana</strong></p>
+            </div>
+            <div>
+                <img src="images/lizzie-mcguire.jpg" alt="Lizzie McGuire">
+                <p><strong>Lizzie McGuire</strong></p>
+            </div>
+            <div>
+                <img src="images/suite-life.jpg" alt="The Suite Life of Zack & Cody">
+                <p><strong>The Suite Life of Zack & Cody</strong></p>
+            </div>
         </section>
     </main>
 </body>
