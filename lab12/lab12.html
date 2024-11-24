@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Slideshow</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #planetContainer {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+
+        #planetDisplay img {
+            max-width: 300px;
+            max-height: 300px;
+        }
+
+        #planetInfo {
+            margin-left: 20px;
+        }
+
+        .thumbnail {
+            float: left;
+            margin: 5px;
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Hide all large images and text except Mercury */
+        #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune,
+        #venusInfo, #earthInfo, #marsInfo, #jupiterInfo, #saturnInfo, #uranusInfo, #neptuneInfo {
+            display: none;
+        }
+
+        #mercury, #mercuryInfo {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planet Slideshow</h1>
+
+    <div id="planetContainer">
+        <div id="planetDisplay">
+            <img id="mercury" src="../images/mecury.jpg" alt="Mercury">
+            <img id="venus" src="venus_lar.jpg" alt="Venus">
+            <img id="earth" src="../images/earth.jpg" alt="Earth">
+            <img id="mars" src="../images/mars.jpg" alt="Mars">
+            <img id="jupiter" src="../images/jupiter.jpg" alt="Jupiter">
+            <img id="saturn" src="../images/saturn.jpg" alt="Saturn">
+            <img id="uranus" src="../images/uranus.jpg" alt="Uranus">
+            <img id="neptune" src="../images/neptune.jpg" alt="Neptune">
+        </div>
+        <div id="planetInfo">
+            <div id="mercuryInfo">Mercury is the smallest planet in our solar system.</div>
+            <div id="venusInfo">Venus is the hottest planet in our solar system.</div>
+            <div id="earthInfo">Earth is our home planet, the only one with known life.</div>
+            <div id="marsInfo">Mars is known as the Red Planet due to its reddish appearance.</div>
+            <div id="jupiterInfo">Jupiter is the largest planet in the solar system.</div>
+            <div id="saturnInfo">Saturn is famous for its beautiful ring system.</div>
+            <div id="uranusInfo">Uranus is unique for its sideways rotation.</div>
+            <div id="neptuneInfo">Neptune is known for its deep blue color and strong winds.</div>
+        </div>
+    </div>
+
+    <div id="thumbnails">
+        <img src="../images/mecury.jpg" class="thumbnail" onclick="PlanetsOff(); showMercury();" alt="Mercury">
+        <img src="../images/venus.jpg" class="thumbnail" onclick="PlanetsOff(); showVenus();" alt="Venus">
+        <img src="../images/earth.jpg" class="thumbnail" onclick="PlanetsOff(); showEarth();" alt="Earth">
+        <img src="../images/mars.jpg" class="thumbnail" onclick="PlanetsOff(); showMars();" alt="Mars">
+        <img src="../images/jupiter.jpg" class="thumbnail" onclick="PlanetsOff(); showJupiter();" alt="Jupiter">
+        <img src="../images/saturn.jpg" class="thumbnail" onclick="PlanetsOff(); showSaturn();" alt="Saturn">
+        <img src="../images/uranus.jpg" class="thumbnail" onclick="PlanetsOff(); showUranus();" alt="Uranus">
+        <img src="../images/neptune.jpg" class="thumbnail" onclick="PlanetsOff(); showNeptune();" alt="Neptune">
+    </div>
+
+    <script>
+        function PlanetsOff() {
+            // Turn off all large images
+            document.getElementById('mercury').style.display = 'none';
+            document.getElementById('venus').style.display = 'none';
+            document.getElementById('earth').style.display = 'none';
+            document.getElementById('mars').style.display = 'none';
+            document.getElementById('jupiter').style.display = 'none';
+            document.getElementById('saturn').style.display = 'none';
+            document.getElementById('uranus').style.display = 'none';
+            document.getElementById('neptune').style.display = 'none';
+
+            // Turn off all text
+            document.getElementById('mercuryInfo').style.display = 'none';
+            document.getElementById('venusInfo').style.display = 'none';
+            document.getElementById('earthInfo').style.display = 'none';
+            document.getElementById('marsInfo').style.display = 'none';
+            document.getElementById('jupiterInfo').style.display = 'none';
+            document.getElementById('saturnInfo').style.display = 'none';
+            document.getElementById('uranusInfo').style.display = 'none';
+            document.getElementById('neptuneInfo').style.display = 'none';
+        }
+
+        function showMercury() {
+            document.getElementById('mercury').style.display = 'block';
+            document.getElementById('mercuryInfo').style.display = 'block';
+        }
+
+        function showVenus() {
+            document.getElementById('venus').style.display = 'block';
+            document.getElementById('venusInfo').style.display = 'block';
+        }
+
+        function showEarth() {
+            document.getElementById('earth').style.display = 'block';
+            document.getElementById('earthInfo').style.display = 'block';
+        }
+
+        function showMars() {
+            document.getElementById('mars').style.display = 'block';
+            document.getElementById('marsInfo').style.display = 'block';
+        }
+
+        function showJupiter() {
+            document.getElementById('jupiter').style.display = 'block';
+            document.getElementById('jupiterInfo').style.display = 'block';
+        }
+
+        function showSaturn() {
+            document.getElementById('saturn').style.display = 'block';
+            document.getElementById('saturnInfo').style.display = 'block';
+        }
+
+        function showUranus() {
+            document.getElementById('uranus').style.display = 'block';
+            document.getElementById('uranusInfo').style.display = 'block';
+        }
+
+        function showNeptune() {
+            document.getElementById('neptune').style.display = 'block';
+            document.getElementById('neptuneInfo').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
