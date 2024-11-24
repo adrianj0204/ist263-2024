@@ -101,6 +101,17 @@
         .search-bar input[type="submit"]:hover {
             background-color: navy;
         }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -116,25 +127,26 @@
     </header>
     <div class="search-bar">
         <form action="#" method="get">
-            <input type="text" name="search" placeholder="Search your favorite shows...">
+            <label for="search" class="visually-hidden">Search for your favorite shows:</label>
+            <input type="text" id="search" name="search" placeholder="Search your favorite shows...">
             <input type="submit" value="Search">
         </form>
     </div>
     <main>
         <section>
             <h2>Relive Cartoon Network Classics</h2>
-            <img src="../images/CN.jpg" alt="Cartoon Network Logo">
+            <img src="../images/CN.jpg" alt="Cartoon Network logo and its iconic characters">
             <p>Explore the world of Cartoon Network, home to unforgettable characters like Dexter, Blossom, and Jake the Dog.</p>
         </section>
         <section>
             <h2>Disney Channel Memories</h2>
-            <img src="../images/alldisney.jpg" alt="Disney Channel Logo">
-            <p>Revisit magical Disney Channel shows like *Hannah Montana* and *The Suite Life of Zack & Cody* that shaped your childhood.</p>
+            <img src="../images/alldisney.jpg" alt="Disney Channel logo showcasing classic shows">
+            <p>Revisit magical Disney Channel shows like <em>Hannah Montana</em> and <em>The Suite Life of Zack & Cody</em> that shaped your childhood.</p>
         </section>
         <section>
             <h2>Nickelodeon Favorites</h2>
-            <img src="../images/nickel.jpg" alt="Nickelodeon Logo">
-            <p>Laugh and reminisce with Nickelodeon’s most beloved shows, from *SpongeBob SquarePants* to *Rugrats*.</p>
+            <img src="../images/nickel.jpg" alt="Nickelodeon logo with popular cartoons">
+            <p>Laugh and reminisce with Nickelodeon’s most beloved shows, from <em>SpongeBob SquarePants</em> to <em>Rugrats</em>.</p>
         </section>
     </main>
 </body>
