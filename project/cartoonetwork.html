@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartoon Network - Nostalgic TV 🎉</title>
+    <title>Cartoon Network - Nostalgic TV 🎥</title>
+    <!-- Importing the Fredoka One font -->
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,7 +25,6 @@
         header h1 {
             color: darkblue;
             font-size: 4.5em;
-            margin: 0;
         }
 
         nav ul {
@@ -47,50 +47,43 @@
         }
 
         nav ul li a:hover {
-            background-color: #ffcc00;
+            background-color: navy;
             color: white;
         }
 
         main {
             margin: 20px auto;
             padding: 20px;
-            max-width: 600px;
+            max-width: 800px;
             background-color: white;
-            border: 3px solid #ff9900;
+            border: 3px solid darkblue;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 3em;
+            color: darkblue;
         }
 
         section img {
             max-width: 80%;
             height: auto;
             display: block;
-            margin: 0 auto;
-            border: 3px solid #ff9900;
+            margin: 20px auto;
+            border: 3px solid darkblue;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .images-section {
-            display: flex;
-            flex-direction: column; 
-            align-items: center; 
-            gap: 30px;
-        }
-
-        .images-section div {
-            text-align: center;
-        }
-
-        .images-section img {
-            max-width: 80%; 
-            border: 3px solid darkblue;
-            border-radius: 12px;
-        }
-
-        .images-section p {
-            margin-top: 10px;
-            font-size: 1.6em; 
+        section p {
+            font-size: 1.8em;
+            line-height: 1.8;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -107,27 +100,19 @@
     </header>
     <main>
         <section>
-            <p>Cartoon Network first aired in October 1992, quickly becoming a beloved channel for animation fans of all ages. 🐾</p>
-            <h2>Popular Shows 🎉:</h2>
-            <ul>
-                <li>🌟 <strong>The Powerpuff Girls:</strong> Blossom, Bubbles, and Buttercup fight crime and save Townsville.</li>
-                <li>🧪 <strong>Dexter's Laboratory:</strong> Follow Dexter as he navigates life as a boy genius.</li>
-                <li>🗺️ <strong>Adventure Time:</strong> Journey with Finn and Jake in the Land of Ooo.</li>
-            </ul>
+            <h2>Relive Cartoon Network Classics 🎥</h2>
+            <img src="../images/CN.jpg" alt="Cartoon Network logo and its iconic characters">
+            <p>Explore the world of Cartoon Network, home to unforgettable characters like <em>Dexter</em>, <em>Blossom</em>, and <em>Jake the Dog</em>. 🐾</p>
         </section>
-        <section class="images-section">
-            <div>
-                <img src="../images/powerpuff.png" alt="The Powerpuff Girls">
-                <p>🌟 <strong>The Powerpuff Girls</strong></p>
-            </div>
-            <div>
-                <img src="../images/324px-Courage_Logo.png" alt="Dexter's Laboratory">
-                <p>🧪 <strong>Dexter's Laboratory</strong></p>
-            </div>
-            <div>
-                <img src="../images/adventure.png" alt="Adventure Time">
-                <p>🗺️ <strong>Adventure Time</strong></p>
-            </div>
+        <section>
+            <h2>The Powerpuff Girls 🌟</h2>
+            <img src="../images/powerpuff.png" alt="The Powerpuff Girls">
+            <p>Blossom, Bubbles, and Buttercup fight crime and save Townsville in this iconic show that continues to inspire generations. ✨</p>
+        </section>
+        <section>
+            <h2>Courage The Cowardly Dog 🧪</h2>
+            <img src="../images/324px-Courage_Logo.png" alt="Dexter's Laboratory">
+            <p>A kind but easily frightened dog always finds a way to stir up chaos! 🚀</p>
         </section>
     </main>
 </body>
