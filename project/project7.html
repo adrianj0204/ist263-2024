@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Nostalgic TV</title>
+    <style>
+        /* Import cartoonish font */
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: 'Bangers', Arial, sans-serif;
+            color: darkblue;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: white;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid darkblue;
+            border-radius: 4px;
+        }
+
+        .search-bar input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: navy;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Nostalgia World!</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="cartoonetwork.html">Cartoon Network</a></li>
+                <li><a href="disneychannel.html">Disney Channel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <form action="#" method="get">
+            <label for="search" class="visually-hidden">Search for your favorite shows:</label>
+            <input type="text" id="search" name="search" placeholder="Search your favorite shows...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <main>
+        <section>
+            <h2>Relive Cartoon Network Classics</h2>
+            <img src="../images/CN.jpg" alt="Cartoon Network logo and its iconic characters">
+            <p>Explore the world of Cartoon Network, home to unforgettable characters like Dexter, Blossom, and Jake the Dog.</p>
+        </section>
+        <section>
+            <h2>Disney Channel Memories</h2>
+            <img src="../images/alldisney.jpg" alt="Disney Channel logo showcasing classic shows">
+            <p>Revisit magical Disney Channel shows like <em>Hannah Montana</em> and <em>The Suite Life of Zack & Cody</em> that shaped your childhood.</p>
+        </section>
+        <section>
+            <h2>Nickelodeon Favorites</h2>
+            <img src="../images/nickel.jpg" alt="Nickelodeon logo with popular cartoons">
+            <p>Laugh and reminisce with Nickelodeon’s most beloved shows, from <em>SpongeBob SquarePants</em> to <em>Rugrats</em>.</p>
+        </section>
+    </main>
+</body>
+</html>
